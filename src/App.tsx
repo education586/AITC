@@ -17,10 +17,11 @@ import CourseDetailsPage from './pages/CourseDetailsPage';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/AITC">
       <div className="min-h-screen bg-gray-50 flex flex-col font-sans text-brand-dark selection:bg-brand-red/20 selection:text-brand-dark">
         <Header />
-        <div className="flex-1">
+
+        <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
@@ -31,7 +32,8 @@ export default function App() {
             <Route path="/forms" element={<FormsPage />} />
             <Route path="/policies" element={<PoliciesPage />} />
           </Routes>
-        </div>
+        </main>
+
         <Footer />
       </div>
     </Router>
