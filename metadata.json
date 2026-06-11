@@ -1,0 +1,8 @@
+{
+  "name": "AITC Landing Page",
+  "description": "Professional landing page for Australian International Trades College",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
