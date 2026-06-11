@@ -131,6 +131,12 @@ export default function GraduateDiplomaPage() {
     'Is required to successfully complete LLND test level 4.'
   ];
 
+  const occupations = [
+    'Career Development Manager',
+    'RTO Education Advisor',
+    'RTO Manager'
+  ];
+
   return (
     <main className="min-h-screen bg-slate-50 font-sans pb-28 text-slate-800">
       
@@ -417,6 +423,18 @@ export default function GraduateDiplomaPage() {
                   Related Occupations
                 </h2>
               </div>
+             
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+                {occupations.map((occupation) => (
+                  <div key={occupation} className="flex items-center gap-2.5 p-4 bg-slate-50 border border-slate-200 rounded-xl hover:bg-slate-100/70 font-bold text-[16px] text-slate-800 transition-colors shadow-2xs">
+                    <Briefcase className="h-4 w-4 text-brand-red shrink-0" />
+                    <span>{occupation}</span>
+                  </div>
+                ))}
+              </div>
+
+             
             </div>
 
           </div>
