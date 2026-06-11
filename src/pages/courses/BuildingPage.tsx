@@ -151,9 +151,9 @@ export default function BuildingPage() {
   ];
 
   const occupations = [
-    'Construction Project Site Supervisor',
-    'Building Estimator & Quantity Surveyor',
-    'Licensed Registered Builder'
+    'Builder',
+    'General Foreperson',
+    'Building Inspector'
   ];
 
   return (
@@ -452,9 +452,7 @@ export default function BuildingPage() {
                   Related Occupations
                 </h2>
               </div>
-              <p className="text-[16px] text-slate-500 leading-relaxed font-sans font-medium">
-                The following academic and employment pathways are available to students who complete this qualification:
-              </p>
+             
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 {occupations.map((occupation) => (
@@ -465,9 +463,7 @@ export default function BuildingPage() {
                 ))}
               </div>
 
-              <div className="text-[11px] text-slate-400 font-mono leading-normal italic mt-4 border-l-2 border-slate-200 pl-3">
-                Please Note: Completion of an AVTA qualification does not guarantee an employment outcome.
-              </div>
+             
             </div>
 
           </div>
